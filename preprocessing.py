@@ -43,20 +43,27 @@ with open('blends.txt','r') as blends:
         if local < localrev:
             local = localrev
         dist[local] = dist[local] + 1
-        if local == 0:
-            print("#################")
-            print(out)
-            print(in1)
-            print(in2)
-            print("#################")
+        # if local == 0:
+            # print("#################")
+            # print(out)
+            # print(in1)
+            # print(in2)
+            # print("#################")
         if local > max:
             max = local
-            print(out)
-            print(in1)
-            print(in2)
+            # print(out)
+            # print(in1)
+            # print(in2)
         local = 0
-    print(max)
-    print(dist)
+    # print(max)
+    # print(dist)
+
+with open('smallDictionary/blendAnalysis.txt','w') as bleAna:
+    bl = ""
+    for keys in dist.keys():
+        bl = bl + str(keys) + ":" + str(dist[keys]) + "\n"
+    print(bl)
+    bleAna.write(bl)
 
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 # for char in alphabet:

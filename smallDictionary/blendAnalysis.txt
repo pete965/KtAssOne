@@ -1,0 +1,12 @@
+0:1
+1:26
+2:47
+3:50
+4:31
+5:15
+6:9
+7:3
+8:0
+9:1
+
+This file describe the frequency of the common prefix of the blend elements
