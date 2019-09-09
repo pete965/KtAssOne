@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import string
+from pytrie import SortedStringTrie as Trie
 
 
 # Split the dictionary file into smaller ones
@@ -109,19 +110,53 @@ def getnumofcontinchar(word):
 
 def loaddictionary():
     dist = dict()
-    alpha = "abcdefghijklmnopqrstuvwxyz"
-    for key in alpha:
-        dist[key] = []
-        filename = "smallDictionary/"+ "dict" + key + ".txt"
-        with open(filename,'r') as dictionary:
-            data = dictionary.readlines()
-            for line in data:
-                line = line.split("\n")[0]
-                if getnumofcontinchar(line) < 3:
-                    dist[key].append(line)
+    with open('dict.txt','r') as dic:
+        data = dic.readlines()
+        for key in data:
+            dist[key.split("\n")[0]] = 1
     return dist
 
+
 alpha = "abcdefghijklmnopqrstuvwxyz"
-print(loaddictionary().get("a"))
+# print(loaddictionary().get("a"))
 # for key in alpha:
 #     print(loaddictionary().get(key))
+def getfirstn(word,n):
+    return None
+
+
+def getngram(word,dist):
+    ls = []
+    initial = word[0]
+    length = len(word)
+    words = dist[initial]
+    if length > 4:
+        for i in range(4):
+            getfirstn(word,4-i)
+
+    return ls
+
+dist = loaddictionary()
+# print("Load Complete")
+def isindic(word):
+    if word in dist[word[0]]:
+        return True
+    else:
+        return False
+# for key in alpha:
+#     print(isindic(key))
+
+
+def getprefix(word,length):
+    prefix = ""
+    for i in range(length):
+        prefix = prefix + word[i]
+    return prefix
+#
+#
+# print(getprefix("swim",3))
+# print(getprefix("apple",4))
+
+dictionary = loaddictionary()
+t = Trie(dictionary)
+print(t.keys(prefix='ba'))

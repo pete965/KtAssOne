@@ -4,7 +4,6 @@
     <list default="true" id="ed97f0ad-b480-45b5-be21-29d5248699f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallDictionary/blendAnalysis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smallDictionary/blendAnalysis.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,8 @@
       <workItem from="1567912735777" duration="8602000" />
       <workItem from="1567928536564" duration="4824000" />
       <workItem from="1567991632287" duration="5419000" />
-      <workItem from="1568006272608" duration="2589000" />
+      <workItem from="1568006272608" duration="10705000" />
+      <workItem from="1568034347443" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1567913492673</created>
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567942274770</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Some interesting ideas came out">
+      <created>1568008875941</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568008875941</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,11 +200,12 @@
     <MESSAGE value="Split dictionary" />
     <MESSAGE value="取得公共前缀长度dict" />
     <MESSAGE value="dist for the blend element frequency as a dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="dist for the blend element frequency as a dictionary" />
+    <MESSAGE value="Some interesting ideas came out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some interesting ideas came out" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KtAssOne$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1567914356719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/KtAssOne$BlendsReader.coverage" NAME="BlendsReader Coverage Results" MODIFIED="1567910867576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568008584171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568040814829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
