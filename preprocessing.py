@@ -174,13 +174,7 @@ def getelse(word, length):
     return last
 
 
-def loadcandidates():
-    output = []
-    with open('candidates.txt','r') as candidates:
-        data = candidates.readlines()
-        for key in data:
-            output.append(key.split("\n")[0])
-    return output
+
 
 
 def loadprimedictionary():
@@ -202,7 +196,7 @@ def judge(key):
         ran = 5
     else:
         ran = len(key) - 1
-    output = (False)
+    output = ("False")
     for i in range(ran):
         pre = getprefix(key,ran-i)
         end = getelse(key,ran-i)
@@ -210,7 +204,7 @@ def judge(key):
         last = tprime.keys(prefix=end)
         if not len(first) == 0 and not len(last) == 0:
             component = getcomponent(first,last,key)
-            output = (True,component[0],component[1])
+            output = ("True",component[0],component[1])
             break
     return output
 
@@ -218,7 +212,19 @@ def judge(key):
 def convertoutput(dist):
     output = ""
     for key in dist.keys():
-        output = output + key + dist[key][0] + "\n"
+        if dist[key][0] == "True":
+            output = output + key + "True" + "\n"
+        else:
+            output = output + key + "False" + "\n"
+    return output
+
+
+def loadcandidates():
+    output = []
+    with open('candidates.txt','r') as candidates:
+        data = candidates.readlines()
+        for key in data:
+            output.append(key.split("\n")[0])
     return output
 
 
@@ -240,7 +246,7 @@ i = 0
 print("Begin Time:",time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 for key in candidates:
     if i % 170 == 0:
-        print(i/17,"%")
+        print(i/170,"%")
         print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
     judgeoutput[key] = judge(key)
     i = i + 1
@@ -252,21 +258,25 @@ with open('blends.txt', 'r') as blends:
     for key in data:
         blend.append(key.split("\t")[0])
 
+print("JudgeOutput:")
+print(judgeoutput)
+
 with open('judgement.txt', 'w') as judge:
     judge.write(convertoutput(judgeoutput))
 
 tp = 0
 fn = 0
 fp = 0
-for key in judgeoutput.keys():
-    if judgeoutput[key][0]:
-        if judgeoutput[key][0] in blend:
+
+for keys in judgeoutput.keys():
+    if judgeoutput[keys][0] == "True":
+        if keys in blend:
             tp = tp + 1
         else:
             fp = fp + 1
-    elif judgeoutput[key][0] in blend:
+    elif keys in blend:
         fn = fn + 1
 print("tp:",tp,"fn",fn,"fp",fp)
 print("precision:",tp/(tp+fp))
-print("recall:",tp/(tp+fn))
+print("recall:",tp/183)
 

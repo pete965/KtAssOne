@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed97f0ad-b480-45b5-be21-29d5248699f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/candidatessmall.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld.py" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing.py" afterDir="false" />
@@ -30,15 +31,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/smallDictionary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Boyang\PycharmProjects\KtAssOne\smallDictionary" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Boyang\PycharmProjects\KtAssOne" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Boyang\PycharmProjects\KtAssOne" />
+      <recent name="C:\Users\Boyang\PycharmProjects\KtAssOne\smallDictionary" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -53,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HelloWorld">
+  <component name="RunManager" selected="Python.preprocessing">
     <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="KtAssOne" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +143,8 @@
       <workItem from="1567991632287" duration="5419000" />
       <workItem from="1568006272608" duration="10705000" />
       <workItem from="1568034347443" duration="3185000" />
-      <workItem from="1568085656384" duration="13286000" />
+      <workItem from="1568085656384" duration="13919000" />
+      <workItem from="1568116376241" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1567913492673</created>
@@ -185,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568040861776</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pytrie Completed">
+      <created>1568110510596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568110510596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,8 +224,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="Pytrie Completed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KtAssOne$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1568110291878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KtAssOne$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1568121717699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/KtAssOne$BlendsReader.coverage" NAME="BlendsReader Coverage Results" MODIFIED="1567910867576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568107825974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568121722768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
