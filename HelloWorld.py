@@ -8,20 +8,37 @@
 # print(convertoutput(dist))
 
 
-def reverse(word):
-    output = ""
-    for i in range(len(word)):
-        output = output + word[len(word) - 1 - i]
-    return output
+# def reverse(word):
+#     output = ""
+#     for i in range(len(word)):
+#         output = output + word[len(word) - 1 - i]
+#     return output
+#
+#
+# def getelse(word, length):
+#     last = ""
+#     for i in range(len(word) - length):
+#         last = last + word[len(word) - 1 - i]
+#     return last
+#
+# print(getelse("Hello",3))
+# print(getelse("banana",1))
+# print(reverse(getelse("Hello",3)))
+# print(reverse(getelse("banana",1)))
 
+candilist = []
+blendlist = []
+all = 0
+with open('candidates.txt','r') as candidates:
+    data = candidates.readlines()
+    for key in data:
+        candilist.append(key.split("\n")[0])
+with open('blends.txt','r') as blends:
+    lines = blends.readlines()
+    for keys in lines:
+        blendlist.append(keys.split("\t")[0])
+for candidate in candilist:
+    if candidate in blendlist:
+        all = all + 1
 
-def getelse(word, length):
-    last = ""
-    for i in range(len(word) - length):
-        last = last + word[len(word) - 1 - i]
-    return last
-
-print(getelse("Hello",3))
-print(getelse("banana",1))
-print(reverse(getelse("Hello",3)))
-print(reverse(getelse("banana",1)))
+print(all)
