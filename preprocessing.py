@@ -187,20 +187,20 @@ def loadprimedictionary():
     return dist
 
 
-def getcomponent(self,first, last, key):
-    ourput1 = ""
+def getcomponent(first, last, key):
+    output1 = ""
     min1 = 10000
     min2 = 10000
     output2 = ""
     for f in first:
-        if Levenshtein.distnce(f,key) < min1:
-            self.output1 = f
-            min1 = Levenshtein.distnce(f,key)
+        if Levenshtein.distance(f,key) < min1:
+            output1 = f
+            min1 = Levenshtein.distance(f,key)
     for l in last:
-        if Levenshtein.distnce(f,key) < min2:
-            self.output2 = l
-            min2 = Levenshtein.distnce(f,key)
-    return (ourput1,output2)
+        if Levenshtein.distance(f,key) < min2:
+            output2 = l
+            min2 = Levenshtein.distance(f,key)
+    return (output1,output2)
 
 
 def judge(key,j):

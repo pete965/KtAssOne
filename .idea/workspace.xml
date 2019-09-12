@@ -145,7 +145,7 @@
       <workItem from="1568116376241" duration="6749000" />
       <workItem from="1568172346920" duration="1833000" />
       <workItem from="1568177281600" duration="7694000" />
-      <workItem from="1568275518807" duration="3092000" />
+      <workItem from="1568275518807" duration="5893000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1567913492673</created>
@@ -217,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568213379464</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="With calculation of edit distance">
+      <created>1568280014517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568280014517</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,11 +253,12 @@
     <MESSAGE value="First Edition. Ready to report" />
     <MESSAGE value="Pre 1% Recall 79%" />
     <MESSAGE value="Pre 1% Recall 96%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre 1% Recall 96%" />
+    <MESSAGE value="With calculation of edit distance" />
+    <option name="LAST_COMMIT_MESSAGE" value="With calculation of edit distance" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KtAssOne$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1568172846008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/KtAssOne$BlendsReader.coverage" NAME="BlendsReader Coverage Results" MODIFIED="1567910867576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568279991614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KtAssOne$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1568280590410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
