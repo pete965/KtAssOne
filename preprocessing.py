@@ -3,7 +3,7 @@ import os
 import string
 import time
 from pytrie import SortedStringTrie as Trie
-
+import Levenshtein
 
 # Split the dictionary file into smaller ones
 def splitdictionary(capital):
@@ -187,11 +187,23 @@ def loadprimedictionary():
     return dist
 
 
-def getcomponent(first, last, key):
-    return ("hello","hello")
+def getcomponent(self,first, last, key):
+    ourput1 = ""
+    min1 = 10000
+    min2 = 10000
+    output2 = ""
+    for f in first:
+        if Levenshtein.distnce(f,key) < min1:
+            self.output1 = f
+            min1 = Levenshtein.distnce(f,key)
+    for l in last:
+        if Levenshtein.distnce(f,key) < min2:
+            self.output2 = l
+            min2 = Levenshtein.distnce(f,key)
+    return (ourput1,output2)
 
 
-def judge(key):
+def judge(key,j):
     if len(key) > 6:
         ran = 5
     else:
@@ -203,9 +215,13 @@ def judge(key):
         first = t.keys(prefix=pre)
         last = tprime.keys(prefix=end)
         if not len(first) == 0 and not len(last) == 0:
-            component = getcomponent(first,last,key)
-            output = ("True",component[0],component[1])
-            break
+            if j % 1700 == 0:
+                component = getcomponent(first, last, key)
+                output = ("True", component[0], component[1])
+                break
+            else:
+                output = ("True", "Hello", "Hello")
+                break
     return output
 
 
@@ -227,7 +243,7 @@ def loadcandidates():
             output.append(key.split("\n")[0])
     return output
 
-
+onepercent = []
 # print(getelse("hello",2))
 # judgeoutput = dict()
 #
@@ -243,13 +259,15 @@ print("Loading Candidates")
 candidates = loadcandidates()
 judgeoutput = dict()
 i = 0
+j = 0
 print("Begin Time:",time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 for key in candidates:
     if i % 170 == 0:
         print(i/170,"%")
         print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
-    judgeoutput[key] = judge(key)
+    judgeoutput[key] = judge(key,j)
     i = i + 1
+    j = j + 1
 print("Stop Time",time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 # print(judgeoutput)
 blend = []
