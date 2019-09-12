@@ -200,6 +200,8 @@ def getcomponent(first, last, key):
         if Levenshtein.distance(f,key) < min2:
             output2 = l
             min2 = Levenshtein.distance(f,key)
+    with open(key+".txt",'w') as save:
+        save.write(key+" "+output1+" "+output2)
     return (output1,output2)
 
 
