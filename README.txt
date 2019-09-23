@@ -1,3 +1,5 @@
+This project is based on the University of Melbourne COMP90049 Knowledge Technology course assignment.
+
 This README describes the data files for COMP90049 2019S2, Project 1. 
 This archive contains six files, of which the dictionary, candidate, and blend files
 form the central data sources for this Project, although you may be interested in the
